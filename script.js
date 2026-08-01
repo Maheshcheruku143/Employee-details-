@@ -94,8 +94,8 @@ new QRCode(document.getElementById("qrcode"), {
 };
 
 emailjs.send(
-    "YOUR_SERVICE_ID",
-    "YOUR_TEMPLATE_ID",
+    "service_ukc6h0d",
+    "template_24g8jta",
     templateParams
 )
   .then(() => {
