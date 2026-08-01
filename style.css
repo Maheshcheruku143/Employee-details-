@@ -45,12 +45,13 @@ body{
 }
 
 .title-line{
-    width: 320px;
-    height: 4px;
-    background: linear-gradient(to right,#ff9800,#0d4d7a,#ff9800);
-    margin: 0 auto 45px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px #0d4d7a;
+    width:700px;      /* 520px nundi 700px ki marchu */
+    max-width:90%;
+    height:5px;       /* Line konchem thick ga */
+    background:linear-gradient(to right,#ff9800,#0d4d7a,#ff9800);
+    margin:0 auto 45px;
+    border-radius:10px;
+    box-shadow:0 0 20px #0d4d7a;
 }
 .row{
     display:flex;
