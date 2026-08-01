@@ -14,24 +14,6 @@ body{
     padding:30px;
 }
 
-
-.main-title{
-    text-align: center;
-    color: #0d4d7a;
-    font-size: 32px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.title-line{
-    width: 220px;
-    height: 4px;
-    background: linear-gradient(to right,#ff9800,#0d4d7a,#ff9800);
-    margin: 0 auto 15px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px #0d4d7a;
-}
-
 .container{
     width:100%;
     max-width:950px;
@@ -54,6 +36,22 @@ body{
     margin-bottom:25px;
 }
 
+.main-title{
+    text-align: center;
+    color: #0d4d7a;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.title-line{
+    width: 220px;
+    height: 4px;
+    background: linear-gradient(to right,#ff9800,#0d4d7a,#ff9800);
+    margin: 0 auto 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #0d4d7a;
+}
 .row{
     display:flex;
     gap:20px;
