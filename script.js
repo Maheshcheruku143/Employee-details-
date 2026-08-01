@@ -93,11 +93,25 @@ new QRCode(document.getElementById("qrcode"), {
     permanent_address: employee.permanentAddress
 };
 
-emailjs.send(
-    "service_ukc6h0d",
-    "template_24g8jta",
-    templateParams
-)
+//emailjs.send(
+    //"service_ukc6h0d",
+   // "template_24g8jta",
+  //  templateParams
+//)/
+
+    document.getElementById("result").style.display = "block";
+
+document.getElementById("empId").innerHTML =
+"Employee ID : " + employee.employeeId;
+
+document.getElementById("resultDetails").innerHTML = `
+<h2>✅ Employee Registration Successful</h2>
+<p>Name: ${employee.firstName} ${employee.surname}</p>
+<p>Mobile: ${employee.mobile}</p>
+<p>Email: ${employee.email}</p>
+`;
+
+form.reset();
   .then(() => {
 
     document.getElementById("result").style.display = "block";
