@@ -45,7 +45,7 @@ body{
 }
 
 .title-line{
-    width: 520px;
+    width: 320px;
     height: 4px;
     background: linear-gradient(to right,#ff9800,#0d4d7a,#ff9800);
     margin: 0 auto 45px;
