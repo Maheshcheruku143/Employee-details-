@@ -99,7 +99,7 @@ new QRCode(document.getElementById("qrcode"), {
   //  templateParams
 //)/
 
-    document.getElementById("result").style.display = "block";
+    document.getElementById("result").style.display = "none";
 
 document.getElementById("empId").innerHTML =
 "Employee ID : " + employee.employeeId;
