@@ -100,12 +100,42 @@ emailjs.send(
 )
   .then(() => {
 
-    alert("Employee Registered Successfully!\nDetails Sent to HR Email");
+    document.getElementById("result").style.display = "block";
+
+    document.getElementById("empId").innerHTML =
+        "Employee ID : " + employee.employeeId;
+
+    document.getElementById("resultDetails").innerHTML = `
+        <h2>✅ Employee Registration Successful</h2>
+
+        <p><b>First Name:</b> ${employee.firstName}</p>
+        <p><b>Surname:</b> ${employee.surname}</p>
+        <p><b>Father Name:</b> ${employee.fatherName}</p>
+        <p><b>Mother Name:</b> ${employee.motherName}</p>
+        <p><b>Gender:</b> ${employee.gender}</p>
+        <p><b>Qualification:</b> ${employee.qualification}</p>
+        <p><b>Marital Status:</b> ${employee.marital}</p>
+        <p><b>Date of Birth:</b> ${employee.dob}</p>
+        <p><b>Mobile:</b> ${employee.mobile}</p>
+        <p><b>Email:</b> ${employee.email}</p>
+        <p><b>Present Address:</b> ${employee.presentAddress}</p>
+        <p><b>Permanent Address:</b> ${employee.permanentAddress}</p>
+    `;
+
+    document.getElementById("qrcode").innerHTML = "";
+
+    new QRCode(document.getElementById("qrcode"), {
+        text:
+            "Employee ID: " + employee.employeeId +
+            "\nName: " + employee.firstName + " " + employee.surname +
+            "\nMobile: " + employee.mobile,
+        width: 180,
+        height: 180
+    });
 
     form.reset();
 
-}).catch((error) => {
-
+})
+.catch((error) => {
     alert("Email Failed : " + error.text);
-
 });
