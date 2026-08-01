@@ -134,6 +134,10 @@ emailjs.send(
     });
 
     //form.reset();
+      setTimeout(() => {
+    form.reset();
+5000);
+}, 
 
 })
 .catch((error) => {
