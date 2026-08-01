@@ -133,7 +133,7 @@ emailjs.send(
         height: 180
     });
 
-    form.reset();
+    //form.reset();
 
 })
 .catch((error) => {
